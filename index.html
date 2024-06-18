@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personalized Birthday Card</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+  <!-- Background music -->
+  <audio id="backgroundMusic" src="1.mp3" loop preload="auto"></audio>
+
+  <!-- Balloons and hearts -->
+  <div id="balloons-container">
+    <!-- Balloons are dynamically added via JavaScript -->
+  </div>
+  <div id="hearts-container">
+    <!-- Hearts are dynamically added via JavaScript -->
+  </div>
+
+  <!-- Card structure -->
+  <div class="card">
+    <div class="card-header">
+      <img
+        src="https://images-ext-1.discordapp.net/external/K5ocLXbD4PYADiIkUkNPIZCb-8lBYwuD-MnSHzUzcSw/https/cdn.discordapp.com/avatars/1025390136474751057/2c9834acef6209510c8905133e2f886b.png?format=webp&quality=lossless"
+        alt="User Logo" class="logo">
+      <h1>Happy Birthday, Raj!</h1>
+      <div class="music-toggle">
+        <label for="toggleMusic">Background Music</label>
+        <input type="checkbox" id="toggleMusic">
+      </div>
+    </div>
+    <div class="card-body">
+      <p>Wishing you a fantastic day filled with joy and happiness!</p>
+      <div class="social-media">
+        <a href="https://discord.com/" target="_blank" class="fab fa-discord"></a>
+        <a href="https://www.instagram.com/" target="_blank" class="fab fa-instagram"></a>
+      </div>
+      <button id="gameButton">Play Quiz Game</button>
+    </div>
+  </div>
+
+  <!-- Quiz Game Popup -->
+  <div id="quizPopup" class="popup">
+    <div class="popup-content">
+      <span class="close">&times;</span>
+      <h2>Quiz Game</h2>
+      <p>Answer the questions correctly to receive warm birthday wishes!</p>
+      <form id="quizForm">
+        <!-- Questions and options dynamically added via JavaScript -->
+      </form>
+    </div>
+  </div>
+
+  <!-- Game Over Popup -->
+  <div id="gameOverPopup" class="popup">
+    <div class="popup-content">
+      <span class="close">&times;</span>
+      <h2>Quiz Complete!</h2>
+      <p>You scored <span id="score">0</span> out of <span id="totalQuestions">0</span>.</p>
+      <p>Tumhari muskurahat pe hai hum fida,<br>
+        Har pal mein saath ho, yahi hai iraada.<br>
+        Janamdin ki hardik badhai, mere bhai,<br>
+        Khush raho tum hamesha, yahi dua hai humari!<br>
+
+        Happy Birthday, Bhai! 🎉🎂
+      </p>
+
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
